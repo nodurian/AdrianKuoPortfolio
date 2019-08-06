@@ -1,25 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/_theming.scss';
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './fonts/camphor';
 
-body,
 html {
-	margin: 0 auto;
-	height: 100% !important;
+  scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+  color: #2A2D34;
+  font-family: Camphor, Helvetica, sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  transition: 0.1s ease-in-out;
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue.
-.app-theme1-theme {
-	$my-app-primary: mat-palette($mat-grey, 100);
-	$my-app-accent: mat-palette($mat-grey, 500);
-	  $my-app-warn: mat-palette($mat-grey, 900);
-	  // Create the theme object (a Sass map containing all of the palettes).
-	$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn); 
-	  // Include theme styles for core and each component used in your app.
-	  // Alternatively, you can import and @include the theme mixins for each component
-	  // that you are using.
-	  @include angular-material-theme($my-app-theme); 
+  &:hover {
+    color: #768EC9;
+    opacity: 0.8;
   }
+}
+
+mat-toolbar-row span {
+  width: 40px;
+}
+
+// .title span {
+//   background-color: #768EC9;
+//   animation: blink-caret 1s step-end infinite;
+// }
+
+// .title {
+//   color: #768EC9;
+//   font-family: Consolas, Helvetica, sans-serif;
+//   font-size: 72px;
+//   font-weight: 400;
+// }
+
+.title {
+  &:before {
+    content: '>\a0';
+  }
+
+  color: #768EC9;
+  width: 600px;
+  align-items: center;
+  font-family: Consolas, Helvetica, sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  display: flex;
+
+  /* Animation */
+  .anim-typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    //margin: 0 auto; /* Gives that scrolling effect as the typing happens */  
+    border-right: 36px solid #768EC9;
+    display: flex;
+    animation:  typewriter 1s steps(10) 1s 1 normal both,
+                blinkTextCursor 500ms steps(10) infinite normal;
+  }
+
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 400px; }
+  }
+  
+  @keyframes blinkTextCursor{
+    from { border-right-color: #768EC9; }
+    to { border-right-color: transparent; }
+  }
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.container-lg {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  // @include mobile {
+  //   padding: 0 20px;
+  // }
+}
+
+.container-md {
+  max-width: 1000px;
+  margin: 1000px 0;
+
+  // @include mobile {
+  //   padding: 0 20px;
+  // }
+}
