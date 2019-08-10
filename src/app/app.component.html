@@ -1,15 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <body>
   <div class="container-lg">
-    <div>
+    <div class="toolbar">
       <mat-toolbar>
         <mat-toolbar-row>
           <span class="fill-space"></span>
           <!-- <a [routerLink] = "'/about'">
             About
           </a> -->
-          <a href="/#about" (click)="scrollToElement(about)">
-            About
+          <a href="/#work" (click)="scrollToElement(work)">
+            Work
           </a>
           <span></span>
           <!-- <a [routerLink] = "'/contact'">
@@ -28,12 +28,91 @@
       </div>
     </div>
     
-    <div id="about" class="container-md">
-      About
+    <div class="container-md intro">
+      Hi, I'm Adrian. I love building clean, intuitive user experiences.
     </div>
 
-    <div id="contact" class="container-md">
-      Contact
+    <div id="about" class="container-md">
+      <mat-grid-list cols="2" rowHeight="140px">
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="tile">
+            <div class="tile-header">
+              EDUCATION
+            </div>
+            B.S. Computer Science -<br>Arizona State University
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="tile">
+            <div class="tile-header">
+              LOCATION
+            </div>
+            Tempe, AZ
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="tile skills">
+            <div class="tile-header">
+              SKILLS
+            </div>
+            <!-- C/C++, Java, JavaScript, Angular, NodeJS, Express, MongoDB, SQL, git  -->
+            <mat-grid-list cols="4" rowHeight="50px" gutterSize="5px">
+                <mat-grid-tile colspan="1" rowspan="1">
+                  <a href="https://angular.io/" target="_blank">
+                    <img class="logos" src="assets/angular.png">
+                  </a>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1">
+                  <a href="https://www.mongodb.com/" target="_blank">
+                    <img class="logos" src="assets/mongodb.png">
+                  </a>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1">
+                  <a href="https://nodejs.org/en/" target="_blank">
+                    <img class="logos" src="assets/njs.png">
+                  </a>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1">
+                    <a href="https://expressjs.com/" target="_blank">
+                      <img class="logos" src="assets/ex.png">
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1">
+                    <a href="https://www.javascript.com/" target="_blank">
+                      <img class="logos" src="assets/js.png">
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1">
+                    <a href="http://www.cplusplus.com/" target="_blank">
+                      <img class="logos" src="assets/cpp.png">
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1">
+                    <a href="https://www.java.com/en/" target="_blank">
+                      <img class="logos" src="assets/java.png">
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1">
+                    <a href="https://git-scm.com/" target="_blank">
+                      <img class="logos" src="assets/git.png">
+                    </a>
+                </mat-grid-tile>
+            </mat-grid-list>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="tile">
+            <div class="tile-header">
+              RESUME
+            </div>
+            <img class="logo" src="assets/pdf.png">
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+
+    <div id="work" class="container-md work">
+      Work
     </div>
 
     <!-- <router-outlet></router-outlet> -->
