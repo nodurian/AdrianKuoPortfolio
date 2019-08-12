@@ -13,7 +13,6 @@ export interface Tile {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Adrian Kuo';
 
   scrollToElement($element): void {
     console.log($element);
