@@ -1,13 +1,23 @@
+@import '../../scss/mixins';
+
 mat-toolbar {
   background: #F9F9F9 !important;
 }
 
 mat-toolbar-row span {
   width: 60px;
+
+  @include mobile {
+    width: 30px;
+  }
 }
 
 .toolbar {
     padding-top: 30px;
+
+    @include mobile {
+      padding-top: 10px;
+    }
   }
 
 .fill-space {

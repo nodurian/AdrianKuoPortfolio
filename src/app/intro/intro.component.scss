@@ -10,14 +10,14 @@
     width: 600px;
     margin-top: 80px;
     align-items: center;
-    font-family: 'Consolas', Helvetica, sans-serif;
-    font-size: 72px;
+    font-family: 'Inconsolata', Georgia;
+    font-size: 80px;
     font-weight: 400;
     display: flex;
   
     @include mobile {
-      font-size: 36px;
-      margin-top: 40px;
+      font-size: 50px;
+      margin-top: 10px;
     }
   
     /* Animation */
@@ -26,7 +26,7 @@
       white-space: nowrap; /* Keeps the content on a single line */
       // margin: 0 auto; /* Gives that scrolling effect as the typing happens */  
       // border-right: 36px solid #29c6b2;
-      border-right: 36px solid #589FBF;
+      border-right: 32px solid #589FBF;
       display: flex;
       animation:  typewriter 1s steps(10) 1s 1 normal both,
                   blinkTextCursor 500ms steps(10) infinite normal;
@@ -53,6 +53,6 @@
     // FOR MOBILE
     @keyframes typewriter-mobile {
       from { width: 0; }
-      to { width: 200px; }
+      to { width: 250px; }
     }
   }

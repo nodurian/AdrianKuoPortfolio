@@ -2,14 +2,15 @@
 @import './fonts/camphor';
 @import './app/intro/intro.component';
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Work+Sans|Montserrat&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: #F9F9F9
+  background: #F9F9F9;
+  overflow-x: hidden;
 }
 
 a {
@@ -39,7 +40,7 @@ a {
   padding: 0 40px;
 
   @include mobile {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
@@ -52,9 +53,9 @@ a {
   font-weight: 200;
 
   @include mobile {
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-top: 40px;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
@@ -63,10 +64,10 @@ a {
 }
 
 .section-title {
-  padding: 80px 0;
+  padding: 80px 0 20px 0;
 
-  .intro {
-    padding-bottom: 20px;
+  @include mobile {
+    padding: 20px 0 10px 0;
   }
 }
 
