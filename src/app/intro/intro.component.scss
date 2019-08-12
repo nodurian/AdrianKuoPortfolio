@@ -1,0 +1,58 @@
+@import '../../scss/mixins';
+
+.title {
+    &:before {
+      content: '>\a0';
+    }
+  
+    // color: #29c6b2;
+    color: #589FBF;
+    width: 600px;
+    margin-top: 80px;
+    align-items: center;
+    font-family: 'Consolas', Helvetica, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    display: flex;
+  
+    @include mobile {
+      font-size: 36px;
+      margin-top: 40px;
+    }
+  
+    /* Animation */
+    .anim-typewriter {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      // margin: 0 auto; /* Gives that scrolling effect as the typing happens */  
+      // border-right: 36px solid #29c6b2;
+      border-right: 36px solid #589FBF;
+      display: flex;
+      animation:  typewriter 1s steps(10) 1s 1 normal both,
+                  blinkTextCursor 500ms steps(10) infinite normal;
+  
+      @include mobile { 
+        // border-right: 24px solid #29c6b2;
+        border-right: 24px solid #589FBF;
+        animation:  typewriter-mobile 1s steps(10) 1s 1 normal both,
+                    blinkTextCursor 500ms steps(10) infinite normal;
+      }
+    }
+  
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 400px; }
+    }
+    
+    @keyframes blinkTextCursor {
+      // from { border-right-color: #29c6b2; }
+      from { border-right-color: #589FBF; }
+      to { border-right-color: transparent; }
+    }
+  
+    // FOR MOBILE
+    @keyframes typewriter-mobile {
+      from { width: 0; }
+      to { width: 200px; }
+    }
+  }

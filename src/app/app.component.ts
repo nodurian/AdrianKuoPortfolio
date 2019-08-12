@@ -13,9 +13,4 @@ export interface Tile {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  scrollToElement($element): void {
-    console.log($element);
-    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
 }

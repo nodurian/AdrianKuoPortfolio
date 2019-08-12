@@ -1,0 +1,49 @@
+.work-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .work-list-item {
+    display: block;
+    padding: 18px 0 20px;
+    border-bottom: 1px solid #dadada;
+    transition: all .3s ease;
+    list-style: none;
+  }
+  
+  .work-list-item-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .work-title {
+    flex: 3 1 100%;
+    margin-bottom: 0;
+    color: #85B9D0;
+    font-family: 'Work Sans', Georgia;
+    font-size: 1.8rem;
+  }
+  
+  .work-detail {
+    color: #787272;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+  
+  .work-role {
+    flex: 1 1 60%;
+  }
+  
+  .work-company {
+    flex: 1 1 20%;
+  }
+  
+  .work-date {
+    flex: 1 1 20%;
+    align-self: flex-end;
+    text-align: right;
+  }

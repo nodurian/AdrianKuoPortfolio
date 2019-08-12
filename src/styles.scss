@@ -1,6 +1,6 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import './fonts/camphor';
-@import './scss/mixins';
+@import './app/intro/intro.component';
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans|Montserrat&display=swap');
 
@@ -33,97 +33,6 @@ a {
   }
 }
 
-img.logos {
-  max-width: 50px;
-  height: auto;
-
-  @include mobile {
-    max-width: 25px;
-  }
-}
-
-img.logo { 
-  max-width: 80px;
-  height: auto;
-
-  @include mobile {
-    max-width: 40px;
-  }
-}
-
-.toolbar {
-  padding-top: 30px;
-}
-
-mat-toolbar {
-  background: #F9F9F9 !important;
-}
-
-mat-toolbar-row span {
-  width: 60px;
-}
-
-.title {
-  &:before {
-    content: '>\a0';
-  }
-
-  // color: #29c6b2;
-  color: #589FBF;
-  width: 600px;
-  margin-top: 80px;
-  align-items: center;
-  font-family: 'Consolas', Helvetica, sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  display: flex;
-
-  @include mobile {
-    font-size: 36px;
-    margin-top: 40px;
-  }
-
-  /* Animation */
-  .anim-typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    // margin: 0 auto; /* Gives that scrolling effect as the typing happens */  
-    // border-right: 36px solid #29c6b2;
-    border-right: 36px solid #589FBF;
-    display: flex;
-    animation:  typewriter 1s steps(10) 1s 1 normal both,
-                blinkTextCursor 500ms steps(10) infinite normal;
-
-    @include mobile { 
-      // border-right: 24px solid #29c6b2;
-      border-right: 24px solid #589FBF;
-      animation:  typewriter-mobile 1s steps(10) 1s 1 normal both,
-                  blinkTextCursor 500ms steps(10) infinite normal;
-    }
-  }
-
-  @keyframes typewriter {
-    from { width: 0; }
-    to { width: 400px; }
-  }
-  
-  @keyframes blinkTextCursor {
-    // from { border-right-color: #29c6b2; }
-    from { border-right-color: #589FBF; }
-    to { border-right-color: transparent; }
-  }
-
-  // FOR MOBILE
-  @keyframes typewriter-mobile {
-    from { width: 0; }
-    to { width: 200px; }
-  }
-}
-
-.fill-space {
-  flex: 1 1 auto;
-}
-
 .container-lg {
   max-width: 1000px;
   margin: 0 auto;
@@ -149,36 +58,6 @@ mat-toolbar-row span {
   }
 }
 
-.tile {
-  // color: #7E76A3;
-  color: #85B9D0;
-  // color: #29c6b2;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-align: left;
-  vertical-align: top;
-  position: absolute;
-
-  @include mobile {
-    font-size: 0.8rem;
-  }
-
-  .tile-header {
-    color: #787272;
-    font-family: 'Camphor', sans-serif;
-    letter-spacing: 1.5px;
-    font-weight: 300;
-    font-size: 1.0rem;
-    max-height: 40px;
-    text-align: left;
-
-    @include mobile {
-      font-size: 0.6rem;
-    }
-  }
-}
-
 .intro {
   font-family: 'Work Sans', Georgia;
 }
@@ -187,100 +66,8 @@ mat-toolbar-row span {
   padding: 80px 0;
 
   .intro {
-    font-family: 'Work Sans', Georgia;
     padding-bottom: 20px;
   }
-}
-
-.work-list {
-  margin: 0;
-  padding: 0;
-}
-
-.work-list-item {
-  display: block;
-  padding: 18px 0 20px;
-  border-bottom: 1px solid #dadada;
-  transition: all .3s ease;
-  list-style: none;
-}
-
-.work-list-item-link {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.work-title {
-  flex: 3 1 100%;
-  margin-bottom: 0;
-  color: #85B9D0;
-  font-family: 'Work Sans', Georgia;
-  font-size: 1.8rem;
-}
-
-.work-detail {
-  color: #787272;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-}
-
-.work-role {
-  flex: 1 1 60%;
-}
-
-.work-company {
-  flex: 1 1 20%;
-}
-
-.work-date {
-  flex: 1 1 20%;
-  align-self: flex-end;
-  text-align: right;
-}
-
-// .work-item {
-//   display: block;
-//   height: auto;
-//   max-width: 100%;
-//   position: relative;
-// }
-
-// .work-title {
-//   color: #787272;
-//   font-family: 'Camphor', Helvetica, sans-serif;
-//   font-size: 1.5rem;
-//   font-weight: 300;
-//   padding-top: 25px;
-//   text-align: center;
-//   position: relative;
-
-//   @include mobile {
-//     padding-top: 5px;
-//     font-size: 0.6rem;
-//   }
-// }
-
-.skills {
-  width: 70%;
-}
-
-.contact-list {
-  margin: 0;
-  padding: 0;
-}
-
-.contact-list-item {
-  display: inline-block;
-  margin: 0 50px 0 0;
-  list-style: none;
-}
-
-.contact-list-item-link {
-  font-size: 1.5rem;
 }
 
 .mat-grid-tile .mat-figure {
