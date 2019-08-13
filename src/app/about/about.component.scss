@@ -35,5 +35,9 @@
 }
 
 .about-link {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  
+  @include mobile {
+    font-size: 1.3rem;
+  }
 }
