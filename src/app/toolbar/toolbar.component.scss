@@ -4,14 +4,24 @@ mat-toolbar {
   background: #F9F9F9 !important;
 }
 
+mat-toolbar-row {
+  @include mobile {
+    justify-content: center !important;;
+  }
+}
+
 mat-toolbar-row span {
   width: 30px;
 
-  @include mobile {
-    width: 10px;
-  }
+  // @include mobile {
+  //   width: 10px;
+  // }
 }
 
 .fill-space {
     flex: 1 1 auto;
+
+    @include mobile {
+      display: none;
+    }
   }

@@ -9,6 +9,10 @@
 
 .home-hello {
     margin-top: 40px;
+
+    @include mobile {
+      margin-top: 10px;
+    }
 }
 
 .home-detail {
@@ -98,7 +102,7 @@
     position: absolute;
 
     @include mobile {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 }
 
@@ -112,7 +116,7 @@
     text-align: left;
 
     @include mobile {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
     }
 }
 

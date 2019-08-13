@@ -14,7 +14,7 @@
     </div>
 
     <div class="info-wrapper animated fadeInRight">
-        <mat-grid-list [cols]="cols" [rowHeight]="outerRowHeight">
+        <mat-grid-list cols="2" [rowHeight]="outerRowHeight">
             <mat-grid-tile class="outer-tile" colspan="1" rowspan="1">
                 <div class="tile">
                     <div class="tile-header">
@@ -32,7 +32,7 @@
                     Tempe, AZ
                 </div>
             </mat-grid-tile>
-            <mat-grid-tile colspan="1" rowspan="1">
+            <mat-grid-tile [colspan]="colspan" rowspan="1">
                 <div class="tile skills">
                     <div class="tile-header">
                         SKILLS

@@ -41,7 +41,7 @@ a {
   height: 100%;
   position: relative;
   padding: 0 40px;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @include mobile {
     padding: 0 10px;
@@ -80,6 +80,7 @@ a {
 
   @include mobile {
     font-size: 1.3rem;
+    margin-top: 10px;
     padding: 0;
   }
 }
