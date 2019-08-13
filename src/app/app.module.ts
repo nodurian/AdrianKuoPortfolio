@@ -7,20 +7,22 @@ import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IntroComponent } from './intro/intro.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntroComponent,
     ToolbarComponent,
     AboutComponent,
     WorkComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

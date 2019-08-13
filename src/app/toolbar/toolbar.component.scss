@@ -5,20 +5,12 @@ mat-toolbar {
 }
 
 mat-toolbar-row span {
-  width: 60px;
+  width: 30px;
 
   @include mobile {
-    width: 30px;
+    width: 10px;
   }
 }
-
-.toolbar {
-    padding-top: 30px;
-
-    @include mobile {
-      padding-top: 10px;
-    }
-  }
 
 .fill-space {
     flex: 1 1 auto;

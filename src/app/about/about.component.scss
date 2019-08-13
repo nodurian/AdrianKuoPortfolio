@@ -1,53 +1,39 @@
 @import '../../scss/mixins';
 
-.tile {
-    // color: #7E76A3;
-    color: #85B9D0;
-    // color: #29c6b2;
-    font-family: 'Work Sans', Helvetica, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-align: left;
-    vertical-align: top;
-    position: absolute;
-  
-    @include mobile {
-      font-size: 0.8rem;
-    }
+.about-detail {
+  white-space: pre-line;
+  text-align: left;
+  position: absolute;
+  max-width: 600px;
+  padding-top: 18px;
 }
 
-.tile-header {
-    color: #787272;
-    font-family: 'Camphor', sans-serif;
-    letter-spacing: 1.5px;
-    font-weight: 300;
-    font-size: 1.0rem;
-    max-height: 40px;
-    text-align: left;
-
-    @include mobile {
-      font-size: 0.6rem;
-    }
-}
-
-.skills {
-  width: 70%;
-}
-
-img.logos {
-  max-width: 50px;
-  height: auto;
+.about-subsection-title {
+  // color: #787272;
+  // font-family: 'Camphor', Helvetica, sans-serif;
+  // letter-spacing: 1.5px;
+  // text-transform: uppercase;
+  // font-size: 1rem;
+  // font-weight: 300;
+  color: #85B9D0;
+  font-family: 'Work Sans', Georgia;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-bottom: 6px;
 
   @include mobile {
-    max-width: 25px;
+    font-size: 1.4rem;
   }
 }
 
-img.logo { 
-  max-width: 80px;
-  height: auto;
+.about-subsection {
+  margin-bottom: 40px;
+}
 
-  @include mobile {
-    max-width: 40px;
-  }
+.about-par {
+  margin-top: 0;
+}
+
+.about-link {
+  font-size: 1.3rem;
 }

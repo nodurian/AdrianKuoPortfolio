@@ -1,5 +1,29 @@
 @import '../../scss/mixins';
 
+.home-wrapper {
+  max-width: 1000px;
+  height: 50%;
+  position: relative;
+  top: 20%;
+}
+
+.home-hello {
+    margin-top: 40px;
+}
+
+.home-detail {
+    margin: 0;
+}
+
+.info-wrapper {
+    max-width: 900px;
+    margin-top: 80px;
+
+    @include mobile {
+      margin-top: 40px;
+    }
+}
+
 .title {
     &:before {
       content: '>\a0';
@@ -8,7 +32,8 @@
     // color: #29c6b2;
     color: #589FBF;
     width: 600px;
-    margin-top: 80px;
+    padding: 40px 0 40px 0;
+    margin: 0;
     align-items: center;
     font-family: 'Inconsolata', Georgia;
     font-size: 80px;
@@ -17,7 +42,7 @@
   
     @include mobile {
       font-size: 50px;
-      margin-top: 10px;
+      padding: 20px 0 20px 0;
     }
   
     /* Animation */
@@ -56,3 +81,63 @@
       to { width: 250px; }
     }
   }
+
+.outer-tile {
+    max-width: 375px !important;
+}
+
+.tile {
+    // color: #7E76A3;
+    color: #85B9D0;
+    // color: #29c6b2;
+    font-family: 'Work Sans', Georgia;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-align: left;
+    vertical-align: top;
+    position: absolute;
+
+    @include mobile {
+        font-size: 1.4rem;
+    }
+}
+
+.tile-header {
+    color: #787272;
+    font-family: 'Camphor', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 1.0rem;
+    max-height: 40px;
+    text-align: left;
+
+    @include mobile {
+      font-size: 0.8rem;
+    }
+}
+
+.skills {
+  width: 70%;
+
+  @include mobile {
+      width: 50%;
+  }
+}
+
+img.logos {
+  max-width: 50px;
+  height: auto;
+
+  @include mobile {
+    max-width: 30px;
+  }
+}
+
+img.logo { 
+  max-width: 80px;
+  height: auto;
+
+  @include mobile {
+    max-width: 50px;
+  }
+}
