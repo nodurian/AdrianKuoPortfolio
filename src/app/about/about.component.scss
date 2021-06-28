@@ -15,29 +15,59 @@
   // text-transform: uppercase;
   // font-size: 1rem;
   // font-weight: 300;
-  color: #85B9D0;
+  color: #7CA8BA;
   font-family: 'Work Sans', Georgia;
   font-size: 1.8rem;
   font-weight: 200;
   margin-bottom: 6px;
 
   @include mobile {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 .about-subsection {
   margin-bottom: 40px;
+  font-size: 1.7rem;
+
+  @include mobile {
+    font-size: .85rem;
+  }
 }
 
-.about-par {
+div p {
   margin-top: 0;
 }
 
-.about-link {
-  font-size: 1.6rem;
+a {
+  color: #547380;
+
+  &:hover {
+    color: #7CA8BA;
+    opacity: .8;
+  }
+}
+
+p a {
+  font-size: 1.7rem;
   
   @include mobile {
-    font-size: 1.3rem;
+    font-size: .85rem;
+  }
+}
+
+.secret {
+  font-size: 1.2rem;
+  
+  @include mobile {
+    font-size: .6rem;
+  }
+}
+
+.secret a {
+  font-size: 1.2rem;
+
+  @include mobile {
+    font-size: .6rem;
   }
 }
