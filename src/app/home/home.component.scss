@@ -4,14 +4,14 @@
   max-width: 1000px;
   height: 50%;
   position: relative;
-  top: 20%;
+  top: 10%;
 }
 
 .home-hello {
     margin-top: 40px;
 
     @include mobile {
-      margin-top: 10px;
+      margin-top: 20px;
     }
 }
 
@@ -45,7 +45,7 @@
     display: flex;
   
     @include mobile {
-      font-size: 50px;
+      font-size: 40px;
       padding: 20px 0 20px 0;
     }
   
@@ -62,7 +62,7 @@
   
       @include mobile { 
         // border-right: 24px solid #29c6b2;
-        border-right: 24px solid #589FBF;
+        border-right: 16px solid #589FBF;
         animation:  typewriter-mobile 1s steps(10) 1s 1 normal both,
                     blinkTextCursor 500ms steps(10) infinite normal;
       }
@@ -82,7 +82,7 @@
     // FOR MOBILE
     @keyframes typewriter-mobile {
       from { width: 0; }
-      to { width: 250px; }
+      to { width: 200px; }
     }
   }
 
@@ -92,7 +92,7 @@
 
 .tile {
     // color: #7E76A3;
-    color: #85B9D0;
+    color: #7CA8BA;
     // color: #29c6b2;
     font-family: 'Work Sans', Georgia;
     font-size: 1.7rem;
@@ -102,7 +102,7 @@
     position: absolute;
 
     @include mobile {
-        font-size: 1rem;
+        font-size: .85rem;
     }
 }
 
@@ -124,7 +124,7 @@
   width: 70%;
 
   @include mobile {
-      width: 50%;
+      width: 40%;
   }
 }
 
@@ -142,6 +142,6 @@ img.logo {
   height: auto;
 
   @include mobile {
-    max-width: 50px;
+    max-width: 40px;
   }
 }
