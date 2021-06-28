@@ -5,6 +5,11 @@
   height: 50%;
   position: relative;
   top: 10%;
+
+  @include ultra {
+    margin: auto;
+    width: 60%;
+  }
 }
 
 .home-hello {
