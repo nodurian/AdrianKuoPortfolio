@@ -1,6 +1,6 @@
 @import '../../scss/mixins';
 
-.about-detail {
+.about-section {
   white-space: pre-line;
   text-align: left;
   position: absolute;
@@ -12,6 +12,10 @@
   }
 }
 
+.about-subsection {
+  padding-bottom: 40px;
+}
+
 .about-subsection-title {
   // color: #787272;
   // font-family: 'Camphor', Helvetica, sans-serif;
@@ -21,8 +25,9 @@
   // font-weight: 300;
   color: #7CA8BA;
   font-family: 'Work Sans', Georgia;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 200;
+  text-transform: uppercase;
   margin-bottom: 6px;
 
   @include mobile {
@@ -30,8 +35,7 @@
   }
 }
 
-.about-subsection {
-  margin-bottom: 40px;
+.about-subsection-detail {
   font-size: 1.7rem;
 
   @include mobile {

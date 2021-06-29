@@ -12,6 +12,10 @@
   }
 }
 
+.home-section {
+  text-transform: lowercase;
+}
+
 .home-hello {
     margin-top: 40px;
 
@@ -119,6 +123,7 @@
     font-size: 1.0rem;
     max-height: 40px;
     text-align: left;
+    text-transform: uppercase;
 
     @include mobile {
       font-size: 0.6rem;
