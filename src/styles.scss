@@ -44,10 +44,14 @@ a {
   overflow-x: hidden;
 
   @include mobile {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   @include large {
+    padding: 0 160px;
+  }
+
+  @include ultra {
     padding: 0 160px;
   }
 }
@@ -77,11 +81,19 @@ a {
   font-family: 'Camphor', Helvetica, sans-serif;
   font-size: 1.7rem;
   font-weight: 300;
+  height: 50%;
+  position: relative;
+  top: 10%;
 
   @include mobile {
     font-size: 1.3rem;
     margin-top: 10px;
     padding: 0;
+  }
+
+  @include ultra {
+    margin: auto;
+    width: 60%;
   }
 }
 

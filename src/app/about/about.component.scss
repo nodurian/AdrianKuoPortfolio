@@ -1,11 +1,19 @@
 @import '../../scss/mixins';
 
-.about-detail {
+.about-section {
   white-space: pre-line;
   text-align: left;
   position: absolute;
   max-width: 600px;
   padding-top: 18px;
+
+  @include ultra {
+    max-width: 1000px;
+  }
+}
+
+.about-subsection {
+  padding-bottom: 40px;
 }
 
 .about-subsection-title {
@@ -17,8 +25,9 @@
   // font-weight: 300;
   color: #7CA8BA;
   font-family: 'Work Sans', Georgia;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 200;
+  text-transform: uppercase;
   margin-bottom: 6px;
 
   @include mobile {
@@ -26,8 +35,7 @@
   }
 }
 
-.about-subsection {
-  margin-bottom: 40px;
+.about-subsection-detail {
   font-size: 1.7rem;
 
   @include mobile {
@@ -40,7 +48,7 @@ div p {
 }
 
 a {
-  color: #547380;
+  color: #6D96A6;
 
   &:hover {
     color: #7CA8BA;
@@ -48,19 +56,11 @@ a {
   }
 }
 
-p a {
-  font-size: 1.7rem;
-  
-  @include mobile {
-    font-size: .85rem;
-  }
-}
-
 .secret {
   font-size: 1.2rem;
   
   @include mobile {
-    font-size: .6rem;
+    font-size: .65rem;
   }
 }
 
@@ -68,6 +68,6 @@ p a {
   font-size: 1.2rem;
 
   @include mobile {
-    font-size: .6rem;
+    font-size: .65rem;
   }
 }
