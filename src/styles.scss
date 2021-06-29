@@ -48,7 +48,7 @@ a {
   }
 
   @include large {
-    padding: 0 160px;
+    padding: 0 80px;
   }
 
   @include ultra {
@@ -76,7 +76,7 @@ a {
 
 .container-md {
   max-width: 1000px;
-  margin-top: 40px;
+  // margin-top: 40px;
   color: #787272;
   font-family: 'Camphor', Helvetica, sans-serif;
   font-size: 1.7rem;
@@ -87,8 +87,13 @@ a {
 
   @include mobile {
     font-size: 1.3rem;
-    margin-top: 10px;
+    // margin-top: 10px;
     padding: 0;
+    top: 5%;
+  }  
+
+  @include large {
+    margin: auto;
   }
 
   @include ultra {
@@ -121,4 +126,9 @@ a {
   align-items: flex-start !important;
   justify-content: flex-start !important;
   float: left;
+}
+
+.header {
+  font-family: 'Camphor', sans-serif;
+  letter-spacing: 1.5px;
 }
