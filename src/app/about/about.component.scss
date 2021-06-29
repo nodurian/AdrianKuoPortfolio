@@ -1,14 +1,19 @@
 @import '../../scss/mixins';
+@import '../../styles.scss';
 
 .about-section {
   white-space: pre-line;
   text-align: left;
   position: absolute;
   max-width: 600px;
-  padding-top: 18px;
+  padding-top: 20px;
 
   @include mobile {
     padding-top: 10px;
+  }
+
+  @include large {
+    max-width: 1000px;
   }
 
   @include ultra {
@@ -31,15 +36,18 @@
   // text-transform: uppercase;
   // font-size: 1rem;
   // font-weight: 300;
+  // font-family: 'Work Sans', Georgia;
+
+  @extend .header;
+
   color: #7CA8BA;
-  font-family: 'Work Sans', Georgia;
   font-size: 1.4rem;
   font-weight: 200;
-  text-transform: uppercase;
   margin-bottom: 6px;
+  text-transform: uppercase;
 
   @include mobile {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 }
 
@@ -78,4 +86,8 @@ a {
   @include mobile {
     font-size: .65rem;
   }
+}
+
+p strong {
+  font-weight: 500;
 }

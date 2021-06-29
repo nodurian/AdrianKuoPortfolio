@@ -1,27 +1,16 @@
 @import '../../scss/mixins';
-
-.home-wrapper {
-  max-width: 1000px;
-  height: 50%;
-  position: relative;
-  top: 10%;
-
-  @include ultra {
-    margin: auto;
-    width: 60%;
-  }
-}
+@import '../../styles.scss';
 
 .home-section {
   text-transform: lowercase;
 }
 
 .home-hello {
-    margin-top: 40px;
+    // margin-top: 40px;
 
-    @include mobile {
-      margin-top: 20px;
-    }
+    // @include mobile {
+    //   margin-top: 20px;
+    // }
 }
 
 .home-detail {
@@ -99,6 +88,19 @@
     max-width: 375px !important;
 }
 
+.tile-header {
+  @extend .header;
+  color: #787272;
+  max-height: 40px;
+  text-align: left;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 0.6rem;
+  }
+}
+
 .tile {
     // color: #7E76A3;
     color: #7CA8BA;
@@ -109,24 +111,10 @@
     text-align: left;
     vertical-align: top;
     position: absolute;
+    text-transform: lowercase;
 
     @include mobile {
         font-size: .85rem;
-    }
-}
-
-.tile-header {
-    color: #787272;
-    font-family: 'Camphor', sans-serif;
-    letter-spacing: 1.5px;
-    font-weight: 300;
-    font-size: 1.0rem;
-    max-height: 40px;
-    text-align: left;
-    text-transform: uppercase;
-
-    @include mobile {
-      font-size: 0.6rem;
     }
 }
 
