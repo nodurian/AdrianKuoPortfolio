@@ -13,15 +13,13 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.colspan = (window.innerWidth <= 768) ? 2 : 1;
-    this.outerRowHeight = (window.innerWidth <= 768) ? "100px" : "2:0.8";
-    this.innerRowHeight = (window.innerWidth <= 768) ? "35px" : "1:1";
+    this.outerRowHeight = (window.innerWidth < 768) ? "100px" : "2:0.8";
+    this.innerRowHeight = (window.innerWidth < 768) ? "35px" : "1:1";
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    this.colspan = (event.target.innerWidth <= 768) ? 2 : 1;
-    this.outerRowHeight = (window.innerWidth <= 768) ? "100px" : "2:0.8";
-    this.innerRowHeight = (window.innerWidth <= 768) ? "35px" : "1:1";
+    this.outerRowHeight = (window.innerWidth < 768) ? "100px" : "2:0.8";
+    this.innerRowHeight = (window.innerWidth < 768) ? "35px" : "1:1";
   }
 }
